@@ -1,0 +1,29 @@
+{
+  "name": "stx-signed-structured-data",
+  "version": "1.0.0",
+  "description": "A 'SIP018: Signed Structured Data' reference implementation and example contract.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "sign-test-ascii": "ts-node ./scripts/sign-test-ascii.ts",
+    "sign-money-order": "ts-node ./scripts/sign-money-order.ts",
+    "test": "clarinet test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarvinJanssen/stx-signed-structured-data.git"
+  },
+  "keywords": [],
+  "author": "Marvin Janssen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarvinJanssen/stx-signed-structured-data/issues"
+  },
+  "homepage": "https://github.com/MarvinJanssen/stx-signed-structured-data#readme",
+  "devDependencies": {
+    "@stacks/transactions": "^3.1.0",
+    "ts-node": "^10.4.0"
+  }
+}

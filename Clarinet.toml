@@ -1,0 +1,12 @@
+[project]
+name = "temp"
+requirements = []
+costs_version = 2
+
+[contracts.money-orders]
+path = "contracts/money-orders.clar"
+depends_on = []
+
+[contracts.signed-structured-data]
+path = "contracts/signed-structured-data.clar"
+depends_on = []
