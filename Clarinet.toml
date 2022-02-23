@@ -1,12 +1,19 @@
 [project]
-name = "temp"
+name = "signed-structured-data"
+authors = []
+description = ""
+telemetry = false
 requirements = []
 costs_version = 2
 
-[contracts.money-orders]
-path = "contracts/money-orders.clar"
+[contracts.money-orders-legacy]
+path = "contracts/money-orders-legacy.clar"
 depends_on = []
 
-[contracts.signed-structured-data]
-path = "contracts/signed-structured-data.clar"
-depends_on = []
+# [contracts.money-orders]
+# path = "contracts/money-orders.clar"
+# depends_on = []
+
+# [contracts.signed-structured-data]
+# path = "contracts/signed-structured-data.clar"
+# depends_on = []
