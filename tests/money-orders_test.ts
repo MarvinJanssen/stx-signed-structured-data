@@ -46,7 +46,7 @@ Clarinet.test({
 		};
 		// Generated with:
 		// npm run sign-money-order 753b7cc01a1a2e86221266a154af739463fce51219d97e4f856cd7200c3bd2a601 ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5 50 1
-		const signature = '0x0cee864510ad388bb23a88f7601135226db3def81d8af357e64660797ab4a25c25e91e6e31c0e1f7c5ce22b7d02289262bb572442ec3e7975d3024bc1326270301';
+		const signature = '0x98b2a5e2b40461a6cb3eb477eba9daf1babf95a56bd95ba075dc8671c241c770372c250b8bebdd6ee681ef02571419ec60c8a81a23cb167219e46dfb549d78bd00';
 
 		const receipt = executeMoneyOrder(chain, order, signature, contractOwner);
 		receipt.result.expectOk().expectBool(true);
@@ -67,7 +67,7 @@ Clarinet.test({
 		};
 		// Generated with:
 		// npm run sign-money-order 753b7cc01a1a2e86221266a154af739463fce51219d97e4f856cd7200c3bd2a601 ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5 60 2
-		const signature = '0xea36f6d76e450900c0d9bc9e0441ac9a3744964924823c662a1a44a9166b1dd00a09039607e4de07b2ae011911e6e488f1b2378d41ec4167997e977a08914f5901';
+		const signature = '0x0d102fa306e9bc7049237e990369f455fd77fa8defa88e932d36343588e889b3028af88f1ce1eb34d38cc129d4de87fe6d44fad18d866fa223303aeca306881700';
 
 		const receipt = executeMoneyOrder(chain, order, signature, recipient);
 		receipt.result.expectOk().expectBool(true);
@@ -86,7 +86,7 @@ Clarinet.test({
 			recipient: recipient.address,
 			salt: 1
 		};
-		const signature = '0x000000000000388bb23a88f7601135226db3def81d8af357e64660797ab4a25c25e91e6e31c0e1f7c5ce22b7d02289262bb572442ec3e7975d3024bc1326270301';
+		const signature = '0x0000000006e9bc7049237e990369f455fd77fa8defa88e932d36343588e889b3028af88f1ce1eb34d38cc129d4de87fe6d44fad18d866fa223303aeca306881700';
 
 		const receipt = executeMoneyOrder(chain, order, signature, contractOwner);
 		receipt.result.expectErr().expectUint(MoneyOrderErrors.InvalidSignature);
@@ -107,7 +107,7 @@ Clarinet.test({
 		};
 		// Generated with:
 		// npm run sign-money-order 753b7cc01a1a2e86221266a154af739463fce51219d97e4f856cd7200c3bd2a601 ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5 120 50
-		const signature = '0x397532e34031f0a081d7170844f8fb21092dd8277869e094c7a6d80c81927fdf269741142a316190d82fe9c0143b9bb855449cba37463c16c8ff4fa9ee57aa4300';
+		const signature = '0x300d5bddd36b57fc64556fb6c621676c8f373b425d752d3e623870ca4ea61a3a6236e6eabcb609d40c3227a74fe68412243e64d2af14f036694be67d06995e3300';
 
 		executeMoneyOrder(chain, order, signature, contractOwner);
 		const receipt = executeMoneyOrder(chain, order, signature, contractOwner);
@@ -128,7 +128,7 @@ Clarinet.test({
 		};
 		// Generated with:
 		// npm run sign-money-order 753b7cc01a1a2e86221266a154af739463fce51219d97e4f856cd7200c3bd2a601 ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5 120 50
-		const signature = '0x397532e34031f0a081d7170844f8fb21092dd8277869e094c7a6d80c81927fdf269741142a316190d82fe9c0143b9bb855449cba37463c16c8ff4fa9ee57aa4300';
+		const signature = '0x300d5bddd36b57fc64556fb6c621676c8f373b425d752d3e623870ca4ea61a3a6236e6eabcb609d40c3227a74fe68412243e64d2af14f036694be67d06995e3300';
 
 		const receipt = executeMoneyOrder(chain, order, signature, contractOwner);
 		receipt.result.expectErr().expectUint(MoneyOrderErrors.InsufficientFunds);
@@ -191,7 +191,7 @@ Clarinet.test({
 		};
 		// Generated with:
 		// npm run sign-money-order 753b7cc01a1a2e86221266a154af739463fce51219d97e4f856cd7200c3bd2a601 ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5 150 60
-		const signature = '0x1f6054146f86f57c8169e09e7b64881f1f930be2caf00c6c95074f20f41ce2551f4435b051a754ba9e44224384dab8fb17481db47e95fb96493c22b27ef431f900';
+		const signature = '0xcf2aadca64ed437d25e7553ec1bafafeae6adb8bd5605c530c117de2c611037862ccde072880fba38d88d249ea5a1cc77649fc44708e9ba0b0636f6f48ff097b01';
 
 		chain.mineBlock([
 			Tx.contractCall(contractName, 'cancel-money-order', [moneyOrderTupleCV(order)], contractOwner.address)
