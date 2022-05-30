@@ -8,7 +8,7 @@
 ;; By Marvin Janssen
 
 (define-constant chain-id u1)
-(define-constant structured-data-prefix 0xc0)
+(define-constant structured-data-prefix 0x534950303138)
 
 (define-constant message-domain-hash (sha256 (to-consensus-buff
 	{

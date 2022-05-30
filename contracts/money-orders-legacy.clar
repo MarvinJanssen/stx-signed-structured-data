@@ -25,7 +25,7 @@
 (define-constant err-already-executed (err u103))
 
 (define-constant chain-id u1)
-(define-constant structured-data-prefix 0xc0)
+(define-constant structured-data-prefix 0x534950303138)
 
 (define-constant message-domain-hash (sha256 (serialize-domain
 	{

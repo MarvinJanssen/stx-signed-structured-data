@@ -7,7 +7,7 @@
 import { ClarityValue, serializeCV, signWithKey, StacksPrivateKey } from '@stacks/transactions';
 import { createHash } from 'crypto';
 
-const structuredDataPrefix = Buffer.from([0xC0]);
+const structuredDataPrefix = Buffer.from([0x53, 0x49, 0x50, 0x30, 0x31, 0x38]);
 
 export const chainIds = {
 	mainnet: 1,
